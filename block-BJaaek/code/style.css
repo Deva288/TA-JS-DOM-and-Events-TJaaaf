@@ -61,11 +61,11 @@ h1 {
   text-align: center;
   margin: 20px auto;
   padding: 10px 20px;
-  background: white;
+  background: #ffffff;
   border-radius: 4px;
   min-width: 24px;
   font-size: 20px;
-  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 14px 26px #0000000a;
   border: 2px solid;
 }
 
