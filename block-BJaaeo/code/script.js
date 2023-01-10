@@ -1,24 +1,26 @@
-let result = document.querySelector(".result");
+let display = document.querySelector(".display");
 let allBtns = document.querySelectorAll("button")
 let initialValue = 0;
 
 function handleBtnClick(event) {
     if(event.target.classList.contains("equal")) {
-        result.innerText = eval(result.innerText);
+        display.innerText = eval(display.innerText);
         return;
     }
-    if(event.target.classList.contains("clear")) {
-        result.innerText = initialValue;
+    if (event.target.classList.contains("clear")) {
+        display.innerText = initialValue;
         return;
     }
-    if(result.innerText == initialValue) {
-        result.innerText = event.target.innerText;
+    if (display.innerText == initialValue) {
+        display.innerText = event.target.innerText;
     } else {
-      result.innerText += event.target.innerText; 
+        display.innerText += event.target.innerText;
     }
 }
+
+
 allBtns.forEach((btn) => {
     btn.addEventListener("click", handleBtnClick);
 });
 
-result.innerText = initialValue;
+display.innerText = initialValue;
